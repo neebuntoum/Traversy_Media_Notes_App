@@ -1,6 +1,6 @@
 const addBtn = document.getElementById('add')
 
-addBtn.addEventListener('click', () => addNewNote('hello world'))
+addBtn.addEventListener('click', () => addNewNote(''))
 
 function addNewNote(text = '') {
   const note = document.createElement('div')
@@ -19,6 +19,7 @@ function addNewNote(text = '') {
   const deleteBtn = note.querySelector('.delete')
   const main = note.querySelector('.main')
   const textArea = note.querySelector('textarea')  
+
 
   deleteBtn.addEventListener('click', () => {
     note.remove()
